@@ -1,8 +1,8 @@
 import Order from "../models/order.model";
-const Joi = require('Joi');
+
 
 exports.createOrder = (req, res) => {
-    
+
     const order = new Order({
         amountTotal: req.body.amountTotal,
         products: req.body.products,
